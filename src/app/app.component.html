@@ -1,0 +1,63 @@
+<h1>Case 1</h1>
+   <form [formGroup]="formulario"(ngSubmit)="onSubmit()">
+      <div>
+          <label>
+            Nome:
+          <input type="text" formControlName="nome">
+          </label>
+       </div>
+     <div>
+        <label>
+          Telefone:
+        <input type="text" formControlName="telefone">
+        </label>
+     </div>
+     <div>
+        <label>
+          Email:
+        <input type="email" formControlName="email" >
+        </label>
+     </div>
+     <div>
+        <label>
+          Idade:
+        <input type="text" formControlName="idade">
+        </label>
+     </div>
+     <div>
+        <label>
+          Cidade:
+        <input type="text" formControlName="cidade">
+        </label>
+     </div>
+     <div>
+        <label>
+          Estado:
+        <input type="text" formControlName="estado">
+        </label>
+     </div>
+     <div>
+        <label>
+          Usuário:
+        <input type="text" formControlName="usuario">
+        </label>
+     </div>
+     <div>
+        <label>
+          Senha:
+        <input type="password" formControlName="senha">
+        </label>
+      </div>    
+      <button class=”button” ng-click=”onSubmit()”>
+        Login
+        </button>
+        <p>
+            Form Status: {{ formulario.status }}
+          </p>
+          <p>
+              Value: {{ formulario.value }}
+            </p>
+        
+    </form>
+
+    
